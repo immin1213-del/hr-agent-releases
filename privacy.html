@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>코니 개인정보처리방침</title>
+<style>
+  body { margin: 0; font-family: "Pretendard", "Malgun Gothic", system-ui, sans-serif; background: #f7f8fb; color: #1d2433; line-height: 1.75; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  .sub { color: #5b6477; margin: 0 0 24px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 6px; }
+  ul { padding-left: 20px; }
+  a { color: #2f6fdb; }
+</style>
+</head>
+<body>
+<main>
+  <h1>코니 개인정보처리방침</h1>
+  <p class="sub">시행일: 2026년 10월 22일</p>
+
+  <p>코니(Koni, 이하 "앱")는 사용자 PC에서 실행되는 Windows용 데스크톱 앱입니다. 이 방침은 앱이 어떤 정보에 접근하고 어떻게 다루는지 설명합니다.</p>
+
+  <h2>1. 접근하는 구글 사용자 데이터</h2>
+  <p>사용자가 앱에서 "구글 연결"을 직접 승인한 경우에만 다음 권한을 사용합니다.</p>
+  <ul>
+    <li><b>캘린더 읽기</b> (calendar.readonly): 오늘·이번 주 일정을 읽어 아침 브리핑과 회의 알림을 보여 줍니다.</li>
+    <li><b>캘린더 일정 추가</b> (calendar.events): 사용자가 요청하고 확인 버튼을 누른 일정만 기본 캘린더에 추가합니다. 기존 일정을 수정하거나 삭제하지 않습니다.</li>
+    <li><b>할 일 읽기</b> (tasks.readonly): 아침 브리핑에 마감이 가까운 할 일을 보여 줍니다.</li>
+  </ul>
+
+  <h2>2. 데이터 저장과 전송</h2>
+  <ul>
+    <li>구글 로그인 토큰은 Windows 암호화 기능으로 암호화해 사용자 PC에만 저장합니다.</li>
+    <li>캘린더·할 일 내용은 화면 표시를 위해 메모리에서만 사용하며, 운영자 서버나 제3자에게 보내지 않습니다. 앱에는 운영자 서버가 없습니다.</li>
+    <li>질문 기록, 메모, 설정은 사용자 PC에만 저장됩니다.</li>
+  </ul>
+
+  <h2>3. AI 처리</h2>
+  <ul>
+    <li>기본값인 로컬 AI(Ollama)를 사용하면 모든 처리가 사용자 PC 안에서 이루어집니다.</li>
+    <li>사용자가 설정에서 클라우드 AI(Anthropic Claude 또는 Google Gemini)를 직접 고르고 동의한 경우에만, 사용자가 입력한 질문과 앱이 찾은 규정·법령 문구, 일정 추가 요청 문장이 해당 AI 서비스로 전송됩니다. 이때는 사용자 본인의 API 키를 사용하며, 각 서비스의 개인정보 정책이 적용됩니다.</li>
+    <li>구글 캘린더나 Tasks에서 가져온 데이터는 AI 서비스로 보내지 않으며, AI 모델 학습에 사용하지 않습니다.</li>
+  </ul>
+
+  <h2>4. 구글 API 서비스 사용자 데이터 정책 준수</h2>
+  <p>앱이 구글 API에서 받은 정보를 사용하고 다른 앱으로 전송하는 방식은 제한적 사용(Limited Use) 요구사항을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 따릅니다.</p>
+
+  <h2>5. 데이터 삭제</h2>
+  <ul>
+    <li><a href="https://myaccount.google.com/permissions">구글 계정 권한 페이지</a>에서 언제든 앱 권한을 철회할 수 있습니다.</li>
+    <li>앱을 지우고 <code>%APPDATA%\코니</code> 폴더를 삭제하면 PC에 저장된 모든 데이터가 지워집니다.</li>
+  </ul>
+
+  <h2>6. 문의</h2>
+  <p>이 방침에 관한 문의는 <a href="https://github.com/immin1213-del/hr-agent-releases/issues">GitHub 이슈</a>로 남겨 주세요. 방침이 바뀌면 이 페이지에 시행일과 함께 게시합니다.</p>
+
+  <p><a href="index.html">← 코니 홈</a></p>
+</main>
+</body>
+</html>
